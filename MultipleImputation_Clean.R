@@ -1,3 +1,29 @@
+library(mice)
+library(semTools)
+library(lavaan)
+
+# 0. Vector of Names ------------------------------------------------------
+
+
+peersattachment_w1 <- c("V2B.8_1", "V2B.8_2", "V2B.8_3", "V2B.8_4", "V2B.8_5", "V2B.8_6",
+                        "V2B.8_7", "V2B.8_8", "V2B.8_9")
+peersattachment_w2 <- c("bv2b8_1", "bv2b8_2", "bv2b8_3", "bv2b8_4", "bv2b8_5", "bv2b8_6",
+                        "bv2b8_7", "bv2b8_8", "bv2b8_9")
+peersattachment_w3 <- c("cv2b8_1", "cv2b8_2", "cv2b8_3", "cv2b8_4", "cv2b8_5", "cv2b8_6",
+                        "cv2b8_7", "cv2b8_8", "cv2b8_9")
+
+parentalattachment_w1 <- c("V2B.7_1", "V2B.7_2", "V2B.7_3", "V2B.7_4", "V2B.7_5", "V2B.7_6",
+                           "V2B.7_7", "V2B.7_8", "V2B.7_9")
+parentalattachment_w2 <- c("bv2b7_1", "bv2b7_2", "bv2b7_3", "bv2b7_4", "bv2b7_5", "bv2b7_6",
+                           "bv2b7_7", "bv2b7_8", "bv2b7_9")
+parentalattachment_w3 <- c("cv2b7_1", "cv2b7_2", "cv2b7_3", "cv2b7_4", "cv2b7_5", "cv2b7_6",
+                           "cv2b7_7", "cv2b7_8", "cv2b7_9")
+
+SEM_variable_list <- c(peersattachment_w1, peersattachment_w2, peersattachment_w3,
+                    parentalattachment_w1, parentalattachment_w2, parentalattachment_w3,
+                    "age_W1", "id2",
+                    "NumRomW3", "NumSexW3", "cv3a3_6a")
+
 # 1. Prediction matrix selection ---------------------------------------------
 
 load("~/KUL - Clases/Master Thesis/R THESIS/CleanedSubdata.Rdata")
