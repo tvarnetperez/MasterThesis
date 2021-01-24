@@ -1,4 +1,3 @@
-
 # 1. Peers ----------------------------------------------------------------
 
 cfapeers <- '
@@ -325,10 +324,6 @@ modificationindices(configpeers_fit6, sort = TRUE, minimum.value = 10)
 # 286  peers2 =~ cv2b8_1 12.650 0.136   0.136    0.136    0.136
 # 548 bv2b8_5 ~~ bv2b8_6 12.006 0.126   0.126    0.316    0.316
 # 277  peers2 =~ V2B.8_1 11.460 0.117   0.117    0.117    0.117
-
-
-
-
 
 # 7th
 
@@ -722,18 +717,19 @@ lavTestLRT(threshpeers_fit, metricpeers_fit)
 #metricpeers_fit  339         457.12     39.047      16   0.001071 **
 
 
+# Summary
 
 # # npar  chisq.scaled     df.scaled pvalue.scaled    cfi.scaled    tli.scaled          crmr 
 # 165.000      1086.045       294.000         0.000         0.965         0.959         0.037 
-# 166.000      1040.783       293.000         0.000         0.967         0.961         0.036 # Specification Search, Localized Acquiescence 1
+# 166.000      1040.783       293.000         0.000         0.967         0.961         0.036 # Started Specification Search
 # 167.000      1008.051       292.000         0.000         0.969         0.962         0.036 
 # 168.000       976.649       291.000         0.000         0.970         0.964         0.035 
 # 169.000       945.812       290.000         0.000         0.971         0.965         0.034 
 # 170.000       919.637       289.000         0.000         0.972         0.967         0.034 
 # 171.000       896.653       288.000         0.000         0.973         0.968         0.033
 # 172.000       871.400       287.000         0.000         0.974         0.969         0.033 # Finished, no more reasonable changes with MI > 10
-# 136.000       674.011       323.000         0.000         0.985         0.983         0.036  # Threshold
-# 120.000       632.540       339.000         0.000         0.987         0.987         0.036  # Metric
+# 136.000       674.011       323.000         0.000         0.985         0.983         0.036 # Threshold Invariant
+# 120.000       632.540       339.000         0.000         0.987         0.987         0.036 # Metric Invariant
 
 
 
@@ -1366,12 +1362,12 @@ lavTestLRT(metricparents_fit, threshparents_fit)
 # We reject Metric Invariance Assumption
 # Threshparents_fit and threshpeers_fit are the last models.
 
-
+# Summary
 #   npar  chisq.scaled     df.scaled pvalue.scaled    cfi.scaled    tli.scaled          crmr 
-#165.000      1220.376       294.000         0.000         0.959         0.951         0.039  # Starting Configural
-#166.000      1162.440       293.000         0.000         0.961         0.954         0.038 
+#165.000      1220.376       294.000         0.000         0.959         0.951         0.039  
+#166.000      1162.440       293.000         0.000         0.961         0.954         0.038 # Started specification search
 #167.000      1106.865       292.000         0.000         0.964         0.957         0.037 
 #168.000      1083.025       291.000         0.000         0.965         0.958         0.037 
-#169.000      1059.201       290.000         0.000         0.966         0.959         0.036 # Stopping Specificaiton Search
+#169.000      1059.201       290.000         0.000         0.966         0.959         0.036 # Stopped Specificaiton Search
 #133.000       850.441       326.000         0.000         0.977         0.975         0.037  # Threshold Invariant
-#117.000       823.702       342.000         0.000         0.979         0.978         0.040     # Metric 
+#117.000       823.702       342.000         0.000         0.979         0.978         0.040  # Metric Invariant
