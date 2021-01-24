@@ -1,3 +1,6 @@
+library(lavaan)
+library(semTools)
+
 # 1. Peers ----------------------------------------------------------------
 
 cfapeers <- '
